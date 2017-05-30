@@ -19,7 +19,11 @@
 	width: 100%;
 	padding:48px 0 0;
 	-ms-touch-action: pan-y;
-	text-align: center;
+}
+@media (min-width:600px){
+	.owl-carousel{
+		text-align: center;
+	}
 }
 .owl-carousel .testim_slider {padding-top:30px;}
 .owl-carousel .owl-wrapper{
@@ -41,10 +45,19 @@
 }
 
 .owl-carousel .owl-item{
-	/*float: left;*/
-	display: inline-block;
-	margin: 0 10px;
+	float: left;
 }
+
+@media (min-width:600px) {
+	.owl-carousel .owl-item{
+		float: none;
+		display: inline-block;
+		margin: 0 10px;
+	}
+}
+
+
+
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
 	cursor: pointer;
